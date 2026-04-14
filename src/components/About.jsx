@@ -10,7 +10,7 @@ const About = () => {
           Hello sir/madam, my name is Gaurav Pawar. I have completed my
           graduation in B.B.A. (Computer Application). I have good knowledge of
           HTML, CSS, JavaScript, React, Node.js, and MongoDB. I have worked on
-          MERN stack projects like a Chat Application and Weather App, which
+          MERN stack projects like a ChatBot Application and Weather App, which
           helped me improve my practical skills. I am a quick learner,
           self-motivated, and passionate about web development. I am looking
           for an opportunity to start my career and grow as a Full-Stack
@@ -22,9 +22,9 @@ const About = () => {
         </h2>
         <p className="mb-6 text-gray-700">
           Bachelor of Business Administration (Computer Application) – 
-          [Your College Name], [University Name], [Year].
+          [Maharaja Sayajirao Gaikwad College malegaon Camp], [ Pune University ], [2025].
           <br />
-          MERN Stack Development Certification – [Platform/Institute Name].
+         
         </p>
 
         <h2 className="text-green-500 text-xl font-semibold mb-3">
@@ -39,7 +39,7 @@ const About = () => {
           Achievements & Awards
         </h2>
         <p className="mb-6 text-gray-700">
-          Completed multiple MERN stack projects including Chat Application
+          Completed multiple MERN stack projects including Chatbot Application
           and Weather App. Participated in college technical events and coding
           competitions. Received appreciation certificate for project
           presentation.
