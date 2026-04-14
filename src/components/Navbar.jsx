@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import pc from "../../public/software.png";
+import pc from "../assets/gaurav.png";
 import { IoMenu } from "react-icons/io5";
 import { RxCross2 } from "react-icons/rx";
 import { Link } from 'react-scroll';
@@ -44,7 +44,7 @@ const Navbar = () => {
             <h1 className="text-xl font-bold">
               Gaura<span className="text-blue-500">v</span>
             </h1>
-            <p className="text-sm text-gray-500">React Developer</p>
+            <p className="text-sm text-gray-500">Fullstack Developer</p>
           </div>
         </div>
 
