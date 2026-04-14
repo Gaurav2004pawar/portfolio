@@ -1,69 +1,77 @@
-import React from "react"
+import React from "react";
 
-import Rpc from "../../public/react.png"
-import Epc from "../../public/express.png"
-import Gpc from "../../public/github.png"
-import Mpc from "../../public/mongodb.png"
-import Npc from "../../public/nodejs.png"
-import Hpc from   "../../public/Html.png"
-import Cpc from    "../../public/css.png"
-import Jpc from   "../../public/JavaScript.png"
+import Html from "../assets/Html.png";
+import Css from "../assets/css.png";
+import Javascript from "../assets/javascript.png";
+import ReactImg from "../assets/react.png";
+import Express from "../assets/express.png";
+import Node from "../assets/nodejs.png";
+import Mongodb from "../assets/mongodb.png";
+import Github from "../assets/github.png";
 
-const PortFolio = () => {
+const Portfolio = () => {
 
-  const cartItem = [
-    { id: 1, logo: Rpc , name: "React Project" },
-    { id: 2, logo: Epc , name: "Express Project" },
-    { id: 3, logo: Gpc , name: "Github Project" },
-    { id: 4, logo: Mpc , name: "Mongodb Project" },
-    { id: 5, logo: Npc , name: "NodeJs Project" },
-     { id: 6, logo: Hpc , name: "Html Project" },
-      { id: 7, logo: Cpc , name: "css Project" },
-       { id: 8, logo: Jpc , name: "javascript Project" }
-  ]
+  const projects = [
+   
+       { id: 1, logo: Html, name: "Html" },
+       { id: 2, logo: Css, name: "Css" },
+       { id: 3, logo: Javascript, name: "Javascript" },
+       { id: 4, logo: ReactImg, name: "React" },
+       { id: 5, logo: Node, name: "NodeJS" },
+       { id: 6, logo: Express, name: "Express" },
+       { id: 7, logo: Mongodb, name: "Mongodb" },
+       { id: 8, logo: Github, name: "Github" }
+     
+  ];
 
   return (
-    <div name="Portfolio" className='max-w-screen-2xl mx-auto container md:px-20 my-20 p-1'>
-      
-      <h1 className='text-green-500 text-2xl font-semibold mb-3'>
+    <div className="max-w-screen-xl mx-auto px-6 md:px-16 py-10 md:py-20">
+
+      {/* Heading */}
+      <h1 className="text-3xl font-bold text-center text-green-600">
         Portfolio
       </h1>
+      <p className="text-center mt-2 text-gray-500">
+        Featured Projects
+      </p>
 
-      <span className='underline font-semibold'>Featured Projects</span>
+      {/* Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 ">
-
-        {cartItem.map((item) => (
-          <div key={item.id} className="card bg-base-100  p-4 hover:scale-105 duration-300 bg-gray-300">
-            
-            <img src={item.logo} alt={item.name} className="w-20 h-20 mx-auto" />
+        {projects.map((item) => (
+          <div
+            key={item.id}
+            className="bg-white p-6 rounded-xl shadow-lg hover:scale-105 transition duration-300"
+          >
+            <img
+              src={item.logo}
+              alt={item.name}
+              className="w-20 h-20 mx-auto"
+            />
 
             <div className="mt-4 text-center">
-              <h1 className="font-bold text-lg">{item.name}</h1>
-
-              <p className="text-sm mt-2">
-                MERN stack based project built for practice and learning.
+              <h2 className="font-bold text-lg">{item.name}</h2>
+              <p className="text-sm text-gray-600 mt-2">
+                MERN stack based project built for learning.
               </p>
             </div>
 
-            <div className="flex justify-between mt-4">
-              <button className="btn btn-primary btn-sm">
+            {/* Buttons */}
+            <div className="flex justify-between mt-5">
+              <button className="px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 text-sm">
                 Live Demo
               </button>
 
-              <button className="btn btn-outline btn-sm bg-green-500 text-white">
+              <button className="px-3 py-1 bg-green-500 text-white rounded hover:bg-green-600 text-sm">
                 Source Code
               </button>
-              <br/>
             </div>
-
           </div>
         ))}
 
       </div>
-
     </div>
-  )
-}
+  );
+};
 
-export default PortFolio
+export default Portfolio;

@@ -72,10 +72,10 @@ const Home = () => {
     {/* Right Section */}
     <div className="w-full md:w-1/2 flex justify-center order-1 md:order-2">
       <img
-        src={pic}
-        alt="profile"
-        className="rounded-full w-full h-[240px] sm:w-[320px] sm:h-[320px] md:w-[420px] md:h-[420px] object-cover shadow-2xl border-4 border-white"
-      />
+  src={pic}
+  alt="profile"
+  className="rounded-md w-[300px] h-[300px]    shadow-2xl border-4 border-white"
+/>
     </div>
 
   </div>
