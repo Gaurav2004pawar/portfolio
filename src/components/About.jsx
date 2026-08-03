@@ -1,61 +1,51 @@
 import React from "react";
 
 const About = () => {
+  const strengths = [
+    "Responsive web design",
+    "Modern React interfaces",
+    "REST API development",
+    "Clean and maintainable code"
+  ];
+
   return (
-    <div name="About" className="max-w-screen-2xl mx-auto container md:px-20 my-16 px-4">
-      <div>
+    <section name="About" className="bg-white py-16 sm:py-20">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="max-w-3xl">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-600">About Me</p>
+          <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+            Building thoughtful digital experiences with modern web technologies.
+          </h2>
+          <p className="mt-5 text-lg leading-8 text-slate-600">
+            I am Gaurav Pawar, a BCA graduate with strong interest in web development and a practical understanding of the MERN stack. I enjoy turning ideas into responsive, elegant, and high-performing applications.
+          </p>
+        </div>
 
-        <h1 className="text-3xl font-bold mb-6">About</h1>
-        <p className="mb-6 text-gray-700">
-          Hello sir/madam, my name is Gaurav Pawar. I have completed my
-          graduation in B.B.A. (Computer Application). I have good knowledge of
-          HTML, CSS, JavaScript, React, Node.js, and MongoDB. I have worked on
-          MERN stack projects like a ChatBot Application and Weather App, which
-          helped me improve my practical skills. I am a quick learner,
-          self-motivated, and passionate about web development. I am looking
-          for an opportunity to start my career and grow as a Full-Stack
-          Developer.
-        </p>
+        <div className="mt-10 grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
+          <div className="rounded-3xl border border-slate-200 bg-slate-50 p-8 shadow-sm">
+            <h3 className="text-xl font-semibold text-slate-900">Education & Training</h3>
+            <p className="mt-4 text-slate-600">
+              Bachelor of Business Administration (Computer Application) — Maharaja Sayajirao Gaikwad College, Pune University, 2025.
+            </p>
+            <p className="mt-4 text-slate-600">
+              I have also worked on multiple hands-on projects including chatbot and weather applications, which helped me strengthen my front-end and back-end development skills.
+            </p>
+          </div>
 
-        <h2 className="text-green-500 text-xl font-semibold mb-3">
-          Education & Training
-        </h2>
-        <p className="mb-6 text-gray-700">
-          Bachelor of Business Administration (Computer Application) – 
-          [Maharaja Sayajirao Gaikwad College malegaon Camp], [ Pune University ], [2025].
-          <br />
-         
-        </p>
-
-        <h2 className="text-green-500 text-xl font-semibold mb-3">
-          Skills & Expertise
-        </h2>
-        <p className="mb-6 text-gray-700">
-          HTML, CSS, JavaScript, React.js, Node.js, Express.js, MongoDB,
-          REST API Development, Git & GitHub, Responsive Web Design.
-        </p>
-
-        <h2 className="text-green-500 text-xl font-semibold mb-3">
-          Achievements & Awards
-        </h2>
-        <p className="mb-6 text-gray-700">
-          Completed multiple MERN stack projects including Chatbot Application
-          and Weather App. Participated in college technical events and coding
-          competitions. Received appreciation certificate for project
-          presentation.
-        </p>
-
-        <h2 className="text-green-500 text-xl font-semibold mb-3">
-          Mission Statement
-        </h2>
-        <p className="text-gray-700">
-          To become a skilled Full-Stack Developer, continuously improve my
-          technical skills, and contribute to innovative and scalable web
-          applications while adding value to the organization.
-        </p>
-
+          <div className="rounded-3xl border border-slate-200 bg-slate-900 p-8 text-white shadow-sm">
+            <h3 className="text-xl font-semibold">Core Strengths</h3>
+            <ul className="mt-4 space-y-3 text-slate-300">
+              {strengths.map((item) => (
+                <li key={item} className="flex items-center gap-2">
+                  <span className="h-2.5 w-2.5 rounded-full bg-blue-400" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

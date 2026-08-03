@@ -22,39 +22,39 @@ const Experience = () => {
   ];
 
   return (
-    <div className="max-w-screen-xl mx-auto px-6 md:px-16 py-12 md:py-20">
+    <section name="Experience" className="bg-white py-16 sm:py-20">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="text-center">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-600">Experience</p>
+          <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+            A practical toolkit for building polished web applications.
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-600">
+            I enjoy creating responsive interfaces, developing API-based features, and turning concepts into reliable solutions.
+          </p>
+        </div>
 
-      {/* Heading */}
-      <h1 className="text-3xl md:text-4xl font-bold text-center text-green-600">
-        Experience
-      </h1>
-
-      <p className="text-center text-gray-600 mt-2">
-        Technologies I have worked with
-      </p>
-
-      {/* Grid */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 mt-10">
-
-        {skills.map((item) => (
-          <div
-            key={item.id}
-            className="bg-white shadow-lg rounded-xl p-6 text-center hover:scale-105 hover:shadow-2xl transition duration-300"
-          >
-            <img
-              src={item.logo}
-              alt={item.name}
-              className="w-16 h-16 mx-auto object-contain"
-            />
-
-            <h2 className="mt-3 font-semibold text-lg">
-              {item.name}
-            </h2>
+        <div className="mt-10 grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
+          <div className="rounded-3xl border border-slate-200 bg-slate-50 p-8 shadow-sm">
+            <h3 className="text-xl font-semibold text-slate-900">What I bring</h3>
+            <ul className="mt-4 space-y-3 text-slate-600">
+              <li>• Strong understanding of front-end and back-end fundamentals.</li>
+              <li>• Comfortable working with modern JavaScript libraries and frameworks.</li>
+              <li>• Focused on reusable components and user-friendly design.</li>
+            </ul>
           </div>
-        ))}
 
+          <div className="grid gap-4 sm:grid-cols-2">
+            {skills.map((item) => (
+              <div key={item.id} className="rounded-2xl border border-slate-200 bg-white p-5 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <img src={item.logo} alt={item.name} className="mx-auto h-14 w-14 object-contain" />
+                <h3 className="mt-3 font-semibold text-slate-900">{item.name}</h3>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
