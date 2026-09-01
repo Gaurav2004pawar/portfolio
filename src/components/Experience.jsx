@@ -8,6 +8,7 @@ import Express from "../assets/express.png";
 import Node from "../assets/nodejs.png";
 import Mongodb from "../assets/mongodb.png";
 import Github from "../assets/github.png";
+import Figma from "../assets/figma.png";
 
 const Experience = () => {
   const skills = [
@@ -18,7 +19,8 @@ const Experience = () => {
     { id: 5, logo: Node, name: "NodeJS" },
     { id: 6, logo: Express, name: "Express" },
     { id: 7, logo: Mongodb, name: "MongoDB" },
-    { id: 8, logo: Github, name: "GitHub" }
+    { id: 8, logo: Github, name: "GitHub" },
+    { id: 9, logo: Figma, name: "Figma" }
   ];
 
   return (

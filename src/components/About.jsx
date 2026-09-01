@@ -4,6 +4,8 @@ const About = () => {
   const strengths = [
     "Responsive web design",
     "Modern React interfaces",
+    "User experience design",
+    "UI component design",
     "REST API development",
     "Clean and maintainable code"
   ];
